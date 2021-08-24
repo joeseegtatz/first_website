@@ -10,10 +10,30 @@ body{
     align-items: center;
     font-size: 75px;
     perspective: 10em;
+    perspective-origin: 50% calc(50% - 2em) ;
+    animation: move 20s linear infinite;
+}
+
+@keyframes move{
+    0%{
+        perspective: 10em;
+    }
+    50%{
+        perspective: 50em;
+    }
+    100%{
+        perspective: 10em;
+    }
+
+}
+
+body:hover{
+    perspective: 50em;
 }
 
 .scene{
     position: relative;
+    transform-style: preserve-3d;
 }
 
 .cube{
@@ -34,8 +54,8 @@ body{
         translate(-50%, -50%) /*was machst translate genau*/
         rotateX(90deg);
        
-    width: 5em;
-    height: 5em;
+    width: 15em;
+    height: 15em;
     background-image: repeating-conic-gradient(
             from 45deg,
          #111 0deg 90deg, 
