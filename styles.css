@@ -36,16 +36,36 @@ body:hover{
     transform-style: preserve-3d;
 }
 
+/* CUBE  */
+
 .cube{
     width: 2em;
     height: 2em;
-    background: var(--boxColor);
 
     position: absolute;
     top: -1em; 
     left: -1em; 
+    
 }
 
+.cube .left, .right, .front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--boxColor);
+}
+
+.cube .front{ transform: translateZ(1em); }
+.cube .right{ transform: rotateY(90deg) translateZ(1em); }
+.cube .back{ transform: rotateY(180deg) translateZ(1em); }
+.cube .left{ transform: rotateY(270deg) translateZ(1em); }
+
+
+
+
+
+
+/* FLOOR */
 
 .floor{
     position: absolute;
