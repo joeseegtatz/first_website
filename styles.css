@@ -14,7 +14,7 @@ body{
     animation: move 15s linear infinite;
 }
 
-/*@keyframes move{
+@keyframes move{
     0%{
         perspective: 10em;
     }
@@ -24,19 +24,9 @@ body{
     100%{
         perspective: 10em;
     }
-}*/
-
-@keyframes move{
-    0%{
-        perspective-origin: 0% calc(50% - 2em) ;
-    }
-    50%{
-        perspective-origin: 100% calc(50% - 2em) ;
-    }
-    100%{
-        perspective-origin: 0% calc(50% - 2em) ;
-    }
 }
+
+
 
 body:hover{
     perspective: 50em;
