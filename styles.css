@@ -11,7 +11,7 @@ body{
     font-size: 75px;
     perspective: 10em;
     perspective-origin: 50% calc(50% - 2em) ;
-    animation: move 20s linear infinite;
+    animation: move 15s linear infinite;
 }
 
 @keyframes move{
