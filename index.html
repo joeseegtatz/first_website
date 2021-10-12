@@ -1,36 +1,54 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-
-    <link rel="stylesheet" href="styles.css">
-    
-    <title>3D</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">    <title>Home</title>
 </head>
-<body id="body">
-    <div class="scene">
-        <div class="floor"></div>
-        <div class="ball"></div>
-        <div class="cube">
-            <div class="front"></div>
-            <div class="back"></div>
-            <div class="top"></div>
-            <div class="bottom"></div>
-            <div class="left"></div>
-            <div class="right"></div>
+<body>
+
+    <div class="grid">
+        <div class="twitch-box" id="soundcloud-link">
+            <div class="content">
+                    <img src="images/soundcloud-logo-2018.jpg">
+            </div>
+            <div class="twitch-border-effect">
+              <div class="top-corner"></div>
+                <div class="bottom-corner"></div>
+            </div>
         </div>
+
+        <div class="content-divider"></div>
+
+        <div class="twitch-box" id="notion-link">
+            <div class="content">
+                    <img src="images/uni_picture.jpg">
+            </div>
+            <div class="twitch-border-effect">
+              <div class="top-corner"></div>
+                <div class="bottom-corner"></div>
+            </div>
+        </div>
+
     </div>
+    
+    
 </body>
 
-
 <script>
-
-    window.addEventListener("scroll", (event) => {
-        let scroll = this.scrollY;
-        document.getElementById("body").style.perspective = scroll/10+10 +"em";
-        console.log(scroll/10)
+    const notion = document.getElementById("notion-link");
+    notion.addEventListener("click", () =>{
+        window.open("https://delirious-punishment-0ef.notion.site/UNI-6cb5076715c141b0beab7124413d7e65");
     });
 
-    
+    const soundcloud = document.getElementById("soundcloud-link");
+    soundcloud.addEventListener("click", () =>{
+        window.open("https://soundcloud.com/jojoejojo");
+    });
+
 </script>
 </html>
+
+
+
