@@ -22,9 +22,9 @@ body {
     background: linear-gradient(177deg, #121212, #038bb1);
     background-size: 400% 400%;
 
-    -webkit-animation: Gradient-animation 120s ease infinite;
-    -moz-animation: Gradient-animation 120s ease infinite;
-    animation: Gradient-animation 120s ease infinite;
+    -webkit-animation: Gradient-animation 200s ease infinite;
+    -moz-animation: Gradient-animation 200s ease infinite;
+    animation: Gradient-animation 200s ease infinite;
 }
 
 @-webkit-keyframes Gradient-animation {
@@ -61,9 +61,9 @@ header{
 
 
 .search{
-    background-color: transparent;
+    background-color: var(--primary-color);
     width: 600px;
-    border: 2px solid var(--primary-color);
+    /* border: 2px solid var(--primary-color); */
     padding:0.5rem 1rem;
     border-radius: 5px;
     font-size: 1rem;
@@ -74,7 +74,7 @@ header{
 }
 
 .search:focus{
-    outline: 1;
+    
     /* outline-color: violet; */
     background-color: var(--primary-color);
 }
@@ -153,11 +153,6 @@ main{
     outline-color: rgb(11,95,254);
     
 }
-
-.movie:hover .overview{
-    /* transform:translateY(0); */
-}
-
 
 
 #tags{
@@ -280,6 +275,7 @@ main{
   }
 
   @media screen and (max-width: 700px){
+      .logo img{width: 200px;}
       .search{width: 100%;}
   }
 
