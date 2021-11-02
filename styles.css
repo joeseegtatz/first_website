@@ -1,96 +1,38 @@
-:root{
-    --shadow-color: #ff00aa;
-}
+body{
+  justify-content: center ;
+  align-content: center;
+  /* justify-items: center ;
+  align-items: center;  */
+  display: grid;
+  margin: 0px;
 
-body,
-html {
-  align-items: center;
-  background-color: #0c1016;
-  display: flex;
-  font-family: "Roboto";
-  font-size: 10px;
-  height: 100%;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-
-/* CONTENT STYLING */
-
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 100px 1fr;
-}
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-/* TWITCH EFFECT */
-
-* {
-  box-sizing: border-box;
-}
-
-.twitch-box {
-  width: 22rem;
-  height: 22rem;
-  position: relative;
-}
-.twitch-box .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
+  max-height: 100vh;
   background-color: white;
-  transition: all 200ms;
 }
-.twitch-box .twitch-border-effect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: #00008b;
+
+.image-wrapper img{
+  height: 40em;
 }
-.twitch-box .twitch-border-effect .top-corner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-top: 1rem solid transparent;
-  border-bottom: 1rem solid transparent;
-  border-right: 1rem solid #00008b;
-  transition: all 200ms;
-  transform-origin: left top;
-  transform: translate(0, 0) scale(0);
+
+.nav__links a{
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
 }
-.twitch-box .twitch-border-effect .bottom-corner {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-bottom: 1rem solid transparent;
-  border-right: 1rem solid transparent;
-  border-top: 1rem solid #00008b;
-  transition: all 200ms;
-  transform-origin: center bottom;
-  transform: translate(0, 0) scale(0);
+
+.nav__links {
+  
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
-.twitch-box:hover .content, .twitch-box:focus .content {
-  transform: translate(1rem, -1rem);
+
+.nav__links li {
+ 
+  padding: 0px 20px;
 }
-.twitch-box:hover .top-corner, .twitch-box:focus .top-corner {
-  transform: translate(0, -1rem) scale(1);
-}
-.twitch-box:hover .bottom-corner, .twitch-box:focus .bottom-corner {
-  transform: translate(1rem, 1rem) scale(1);
+
+
+.nav__links li a:hover {
+  color: red;
 }
