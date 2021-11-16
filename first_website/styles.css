@@ -1,0 +1,46 @@
+body{
+  justify-content: center ;
+  align-content: center;
+  /* justify-items: center ;
+  align-items: center;  */
+  display: grid;
+  margin: 0px;
+
+  max-height: 100vh;
+  background-color: white;
+}
+
+.image-wrapper img{
+  height: 40em;
+}
+
+.nav__links a{
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.nav__links {
+  
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__links li {
+ 
+  padding: 0px 20px;
+}
+
+
+.nav__links li a:hover {
+  color: red;
+  font-style: italic;
+
+}
+
+@media screen and (max-width: 700px){
+  .image-wrapper img{
+    height: 20em;
+  }
+}
